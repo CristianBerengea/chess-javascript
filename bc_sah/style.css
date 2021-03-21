@@ -1,0 +1,68 @@
+body{
+    display: block;
+    background: brown;
+    width: 90vh;
+    margin: auto;
+}
+.bg-animation{
+    animation: blinkingBackground 1s infinite;
+}
+@keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    75%		{ background-color: #254878;}
+    100%	{ background-color: #04a1d5;}
+}
+
+.counter{
+    display: block;
+    position: fixed;
+    font-size: 150px;
+    top: calc(50vh-150px);
+    left: 45vw;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 1vh solid black;
+    margin-top: 4vh;
+}
+.cell{
+    display: block;
+    width: 11vh;
+    height: 11vh;
+}
+.white{
+    background: bisque;
+}
+
+.black{
+    background: cadetblue;
+}
+
+.cell:hover{
+    filter: brightness(70%);
+}
+
+.piece img{
+   display: block;
+   height: 11vh;
+   width: auto;
+   margin: auto;
+}
+
+.selected{
+    background: red;
+}
+
+.player{
+    display: inline;
+    font-size: 120%;
+    color: #fff;
+    padding: 30px;
+}
+
+.black-player{
+    color: #000;
+}
